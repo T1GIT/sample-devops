@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 1 step
+        run: echo Hello, Igor!
+
+      - name: 2 step
+        run: echo Hello, Dima!
